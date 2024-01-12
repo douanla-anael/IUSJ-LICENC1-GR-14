@@ -1,0 +1,179 @@
+
+table {
+    margin-top : 10px;
+    border : 2px solid rgb(40, 32, 32);
+    width: 1500px;
+    justify-content: flex-end;
+    height: 100px;
+}
+td ,tr  {
+
+border: 2px solid#2f2835;
+padding: 15px 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+tr:nth-child(even) {
+
+
+background-color: rgb(122, 230, 240);
+
+}
+table {
+	background-color: #e7e2e7b9;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 20px;
+}
+
+
+
+td.tabHead{
+	background-color: rgb(83, 147, 231); 
+	/*word-spacing: 100px;*/
+	font-size: 50px;
+
+}
+
+p{
+
+    display: inline-flex
+}
+img{
+    width: 200px;
+}
+img+p{
+    display: flex;
+}
+img+span p {
+    display: inline;
+}
+	
+.image, .nom{
+    width: 500px;
+    height:300px; 
+    border-radius: 15px; 
+    margin: 15px; 
+    animation-name: glisser;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-direction:reverse;
+} 
+.nom{
+    max-height: min-content;
+}
+.imagess{
+    overflow: auto; 
+    /*border-style:scroll;*/  
+    height: 5%;
+    width: 90%;
+    margin: 5%;
+    z-index: 0;
+    display: flex;
+    display: inline-flex;
+   /* margin-left: 10%;
+    margin-top: 10%;*/}
+    nom{height: 1%;}
+@keyframes glisser{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-550px);
+    }
+    50%{
+        transform: translateX(-1100px);
+    }
+    75%{
+        transform: translateX(-1650px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-550px);
+    }
+     50%{
+        transform: translateX(-1100px);
+    }
+    75%{
+        transform: translateX(-1650px);
+    }
+   
+    
+}
+header {
+	padding-left: 200px;
+	padding-top: 200px;
+	margin-bottom: 10px;
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(../image/cmr2.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    color:#10e8a4;
+    border-radius: 8px;
+    align-content: center;
+}
+nav {
+    display: flex;
+    margin: 15px;
+    padding: 15px;
+    
+}
+div{
+
+    margin:auto 100px auto 240px;
+
+}
+nav div img{
+border-radius: 50%;
+height: 20px;
+width: 20px;
+justify-content: center;
+align-items: center;
+position: fixed;
+right: 20px;
+bottom: 20px;
+cursor: pointer;
+}
+.icone{
+width: 10px;
+}
+footer h5~a{
+align-items: center;
+justify-content: center;
+color: rgb(127, 255, 142);
+position: relative;
+bottom: 30px;
+margin-top: 10px;
+}
+footer h5{
+    background-color: #4053e7;
+    
+}
+
+
+@media screen and (max-width:1440px){
+
+table{ 
+    width: 20%;
+    height: 20%;
+}
+
+nav{
+    height: 1rem;
+    
+    width: 412px;
+}
+div{ 
+    margin: auto 10px auto 10px;
+    position:relative;
+    top:0px;
+}
+    
+}
